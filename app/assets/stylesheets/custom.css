@@ -14,6 +14,10 @@
 }
 */
 
+p {
+  text-align: left;
+}
+
 .container {
   border: 1px solid white;
 }
@@ -61,6 +65,14 @@ ul#sidebar-author {
   padding-bottom: 10px;
 }
 
-.jumbo-title, .index-author {
-  color: pink;
+.jumbo-title {
+color: #ef017c;
+}
+
+.index-author {
+  color: white;
+}
+
+#book-container {
+  float: left;
 }
