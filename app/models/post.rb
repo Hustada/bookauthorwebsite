@@ -1,5 +1,4 @@
 class Post < ActiveRecord::Base
-  def recent
-    Post.where('created_at >= ?', Time.zone.now.beginning_of_day)
-  end
+	validates :title, presence: true, length: { minimum: 5 }
+	validates :body,  presence: true
 end

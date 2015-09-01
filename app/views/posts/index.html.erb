@@ -14,7 +14,7 @@
                 </div>
                 </br>
                 <center>
-                  <button class="btn btn-danger" type="submit">Submit</button>
+                  <button class="btn btn-default" type="submit">Submit</button>
                 </center>
             </div>
   	  <ul class="nav nav-pills nav-stacked" id="sidebar-nav">
@@ -37,7 +37,14 @@
       <p><%= simple_format(index.zero? ?  post.body : truncate(post.body, length: 300)) %></p>
       <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
     <% end %>
+      <div class="buttons">
+        <button class="button"><%= link_to 'New Post', new_post_path %></button>
+        <button class="button">Log Out</button>
+      </div>
   	</div>
-  </div>
-	
+    <% flash.each do |name, msg| %>
+    <%= content_tag(:div, msg, class: "alert") %>
+    <% end %>
+    <% yield %>
+  </div>	
 </div>
