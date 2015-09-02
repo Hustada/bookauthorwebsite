@@ -22,15 +22,19 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li class="active"><%=link_to 'Author', author_path %><span class="sr-only">(current)</span></a></li>
         <li><%=link_to 'Book', book_path %></li>
         <li><%=link_to 'Contact', contact_path %></li>
         <li><%=link_to 'About', about_path %></li>
+        <li><%=link_to 'Sign Up', signup_path %></li>
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
 <body>
 
 
