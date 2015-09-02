@@ -39,8 +39,10 @@
       <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
     <% end %>
       <div class="buttons">
+      <% if logged_in? %>
         <button class="button"><%= link_to 'New Post', new_post_path %></button>
         <button class="button">Log Out</button>
+        <% end %>
       </div>
   	</div>
     <% flash.each do |name, msg| %>

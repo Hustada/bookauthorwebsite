@@ -30,7 +30,7 @@
         <li><%=link_to 'Book', book_path %></li>
         <li><%=link_to 'Contact', contact_path %></li>
         <li><%=link_to 'About', about_path %></li>
-        <li><%=link_to 'Logout', logout_path %></li>
+        <li><%=link_to 'Logout', logout_path, method: "delete" %></li>
         <% else %>
         <li><%=link_to 'Book', book_path %></li>
         <li><%=link_to 'Contact', contact_path %></li>
