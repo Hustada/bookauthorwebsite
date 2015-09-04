@@ -2,6 +2,11 @@
 	<% provide(:title, @user.name) %>
 	<h1>
 		<%= gravatar_for @user %>
-		<%@user.name %>
+		<%= @user.name %>
 	</h1>
+	 <% @posts.each do |post| %>
+  <ul class="profile-posts">
+    <li><%=link_to post.title, post_path(post) %></li>
+  </ul>
+  <% end %>
 </div>

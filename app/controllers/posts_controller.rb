@@ -9,7 +9,8 @@ def new
 end
 
 def create
-  @post = Post.new(post_params)
+  @user = current_user
+  @post = current_user.posts.create(post_params)
    if @post.save
   @post.save
    redirect_to @post

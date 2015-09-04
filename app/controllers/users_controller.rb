@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
     def show
       @user = User.find(params[:id])
+      @posts = @user.posts
     end
 
     def create
@@ -12,7 +13,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "Thanks for signing up!"
-      redirect_to @user
+      redirect_to root_path
     else
       render 'new'
     end
