@@ -26,7 +26,7 @@
         <li class="active"><%=link_to 'Author', author_path %><span class="sr-only">(current)</span></a></li>
         <% if logged_in? %>
         <li><%=link_to 'Profile', current_user %></li>
-        <li><%=link_to 'Settings', '#' %></li>
+        <li><%=link_to 'Settings', edit_user_path(current_user) %></li>
         <li><%=link_to 'Book', book_path %></li>
         <li><%=link_to 'Contact', contact_path %></li>
         <li><%=link_to 'About', about_path %></li>
