@@ -39,4 +39,13 @@ module SessionsHelper
     session.delete(:user_id)
     @current_user = nil
   end
+
+  def clear_return_to
+    session[:return_to] = nil
+  end
+
+  def store_location
+    session[:return_to] = request.url if request.get?
+  end
+
 end

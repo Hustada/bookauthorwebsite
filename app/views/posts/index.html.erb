@@ -38,6 +38,7 @@
       <p>Comments (<%=link_to "#{post.comments.count}", post_path(post) %>)<p>
       <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
     <% end %>
+    <%= will_paginate @posts %>
       <div class="buttons">
       <% if logged_in? %>
         <button class="button"><%= link_to 'New Post', new_post_path %></button>

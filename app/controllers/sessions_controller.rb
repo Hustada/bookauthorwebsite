@@ -25,4 +25,9 @@ class SessionsController < ApplicationController
     log_out if logged_in?
     redirect_to root_url
   end
+
+  def redirect_back_or(default)
+      redirect_to(session[:return_to] || default)
+      clear_return_to
+  end
 end
