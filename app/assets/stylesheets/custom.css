@@ -101,7 +101,7 @@ color: white;
   float: left;
 }
 
-#about-pic {
+#about-pic, #book-pic {
   float: left;
   margin-right: 10px;
 }
