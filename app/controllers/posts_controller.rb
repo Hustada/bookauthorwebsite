@@ -1,8 +1,7 @@
 class PostsController < ApplicationController
 
 def index
-  @posts = Post.all.order('created_at ASC')
-  @posts = Post.paginate(:page => params[:page], :per_page => 5)
+  @posts = Post.all.order('created_at DESC').paginate(page: params[:page],per_page: 3)
   @comments = Comment.all
 end
 
