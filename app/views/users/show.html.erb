@@ -12,7 +12,7 @@
     <h1>Recent Posts</h1>
   	 <% @posts.each do |post| %>
     <ul class="profile-posts">
-      <li><%=link_to post.title, post_path(post) %> - Posted <%= time_ago_in_words(post.created_at) %> Ago</li>
+      <li><%=link_to post.title, post_path(post) %> - <small>Posted <%= time_ago_in_words(post.created_at) %> Ago</small></li>
     </ul>
     <% end %>
     <%= will_paginate @posts %>
