@@ -111,3 +111,7 @@ color: white;
 .profile-posts {
   list-style: none;
 }
+
+.gravatar {
+  margin-right: 10px;
+}
