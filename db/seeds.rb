@@ -22,3 +22,10 @@ User.create!(name:  "Mark Hustad",
                password:              password,
                password_confirmation: password)
 end
+
+25.times do |n|
+  title  = Faker::Lorem.sentence(5)
+  body = Faker::Lorem.paragraph(100)
+  Post.create!(title:  title,
+               body: body)
+end

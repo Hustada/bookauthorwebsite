@@ -108,7 +108,7 @@ color: white;
 
 /* profile page */
 
-.profile-posts {
+.profile-posts, .comment-posts {
   list-style: none;
 }
 
