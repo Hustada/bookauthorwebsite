@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   before_save   :downcase_email
   before_create :create_activation_digest
   has_many :posts
+  has_many :comments
   attr_accessor :remember_token
   before_save { self.email = email.downcase }
 	validates :name, presence: true, length: { maximum: 50 }

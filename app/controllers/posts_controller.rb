@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-  before_action :admin_user,     only: [:create, :edit, :destroy, :update]
+  include ApplicationHelper
+  before_action :admin_user,     only: :destroy
 
 def index
   @posts = Post.all.order('created_at DESC').paginate(page: params[:page],per_page: 3)
@@ -50,8 +51,5 @@ def post_params
   params.require(:post).permit(:title, :body)
 end
 
-# Confirms an admin user.
-    def admin_user
-      redirect_to(root_url) unless current_user.admin?
-    end
+
 end

@@ -49,6 +49,10 @@ module SessionsHelper
     session[:return_to] = nil
   end
 
+  def store_location
+    session[:return_to] = request.url if request.get?
+  end
+
 
   # Redirects to stored location (or to the default).
   def redirect_back_or(default)
