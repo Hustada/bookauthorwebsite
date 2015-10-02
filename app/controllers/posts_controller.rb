@@ -21,6 +21,7 @@ def create
 end
 
 def show
+  @email_lists = EmailList.all
   @post = Post.find(params[:id])
 end
 
