@@ -9,11 +9,12 @@
 .row {
   border: 1px solid black;
 }
+*/
 
-.col {
+.col-md-2, .col-md-8 {
   border: 1px solid black;
 }
-*/
+
 
 /*media queries */
 
