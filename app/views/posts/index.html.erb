@@ -28,14 +28,14 @@
     <% end %>
 
     <center><%= will_paginate @posts %></center>
-
     <div class="buttons">
-      <% if logged_in? %>
+      <% if logged_in? && current_user.admin?%>
         <button class="button"><%= link_to 'New Post', new_post_path %></button>
         <button class="button">Log Out</button>
         <% end %>
       </div>
     </div>
+
 
 
 

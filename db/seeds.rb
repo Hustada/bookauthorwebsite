@@ -6,10 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create!(name:  "Example User",
-             email: "example@railstutorial.org",
-             password:              "foobar",
-             password_confirmation: "foobar")
+User.create!(name:  "Mark Hustad",
+             email: "hustada80@gmail.com",
+             password:              "frackers",
+             password_confirmation: "frackers",
+						 admin: true,
+						 activated: true)
 
 99.times do |n|
   name  = Faker::Name.name
@@ -19,4 +21,11 @@ User.create!(name:  "Example User",
                email: email,
                password:              password,
                password_confirmation: password)
+end
+
+25.times do |n|
+  title  = Faker::Lorem.sentence(5)
+  body = Faker::Lorem.paragraph(100)
+  Post.create!(title:  title,
+               body: body)
 end

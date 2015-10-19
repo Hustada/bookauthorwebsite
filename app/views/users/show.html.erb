@@ -8,18 +8,36 @@
             <%= @user.name %>
           </h1>
         </div>
-    <br>
-    <h1>Recent Posts</h1>
-  	 <% @posts.each do |post| %>
+
+    <% if current_user.admin? %>
+    <h2>Recent Posts</h2>
+    <% @posts.each do |post| %>
     <ul class="profile-posts">
       <li><%=link_to post.title, post_path(post) %> - <small>Posted <%= time_ago_in_words(post.created_at) %> Ago</small></li>
     </ul>
     <% end %>
     <%= will_paginate @posts %>
+
+    <h2>Recent Comments</h2>
+    <% @comments.each do |comment| %>
+    <ul class="comment-posts">
+      <li><%=link_to comment.name, [comment.post] %> - <small>Posted <%= time_ago_in_words(comment.created_at) %> Ago</small></li>
+    </ul>
+    <% end %>
+    <% else %>
+    <h2>Recent Comments</h2>
+    <% @comments.each do |comment| %>
+    <ul class="comment-posts">
+      <li><%=link_to comment.name, [comment.post] %> - <small>Posted <%= time_ago_in_words(comment.created_at) %> Ago</small></li>
+    </ul>
+    <% end %>
+    <% end %>
     <br>
     <div class="buttons">
-      <% if logged_in? %>
+      <% if logged_in?  %>
+      <% if current_user.admin? %>
         <button class="button"><%= link_to 'New Post', new_post_path %></button>
+        <% end %>
         <button class="button">Log Out</button>
         <% end %>
       </div>

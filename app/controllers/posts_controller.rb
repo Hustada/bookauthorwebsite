@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  include ApplicationHelper
+  before_action :admin_user,     only: :destroy
 
 def index
   @posts = Post.all.order('created_at DESC').paginate(page: params[:page],per_page: 3)
@@ -48,4 +50,6 @@ private
 def post_params
   params.require(:post).permit(:title, :body)
 end
+
+
 end
