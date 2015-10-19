@@ -1,11 +1,12 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-md-2">
-      <ul class="nav nav-pills nav-stacked" id="sidebar-nav">
+    <div class="col-md-2" id="index-sidebar">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" id="sidebar-nav">
         <li role="presentation"><%=link_to 'Author', author_path %></li>
         <li role="presentation"><%=link_to 'Book', book_path %></li>
         <li role="presentation"><%=link_to 'Contact', contact_path %></li>
+        <li role="presentation"><%=link_to 'Something Else', '#' %></li>
       </ul>
     </div>
 
@@ -25,7 +26,8 @@
       <p>Comments (<%=link_to "#{post.comments.count}", post_path(post) %>)<p>
       <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
     <% end %>
-    <%= will_paginate @posts %>
+
+    <center><%= will_paginate @posts %></center>
 
     <div class="buttons">
       <% if logged_in? %>
