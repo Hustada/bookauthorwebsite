@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-md-2" id="index-sidebar">
+    <div class="col-md-3" id="index-sidebar">
       <ul class="nav nav-pills nav-stacked" data-spy="affix" id="sidebar-nav">
         <li role="presentation"><%=link_to 'Author', author_path %></li>
         <li role="presentation"><%=link_to 'Book', book_path %></li>
@@ -19,7 +19,7 @@
 
 
 
-    <div class="col-md-8">
+    <div class="col-md-9">
       <% @posts.each_with_index do |post, index| %>
     <h2 class="title"><%= link_to post.title, post %></h2>
       <p><%= simple_format(index.zero? ?  post.body : truncate(post.body, length: 300)) %></p>
@@ -42,18 +42,6 @@
 
 
 
-  <div class="col-md-2">
-    <div class = "well" id = "newsletter_well">
-      <h3 id = "newsletter-title">Want the latest news?</h3>
-        <div class="input-group">
-          <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-            <input type="text" class="form-control" placeholder="Enter email here">
-        </div>
-              </br>
-        <center>
-          <button class="btn btn-default" type="submit">Submit</button>
-        </center>
-    </div>
-  </div>
+  
   </div>
 </div>
