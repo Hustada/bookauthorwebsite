@@ -12,4 +12,7 @@ end
 def book
 end
 
+def home
+end
+
 end

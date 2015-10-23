@@ -26,6 +26,11 @@
   border: 1px solid white;
 }*/
 
+/* deactivated links and stuff */
+li#news a {
+  display: none;
+}
+
 /* buy buttons */
 
 #barnes-button {
@@ -73,6 +78,24 @@
 
 .full {
   background: url(housewoods2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.author-page {
+  background: url(lightgray.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.contact-page {
+  background: url(lightgray.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -161,6 +184,7 @@ a {
 
 p {
   text-align: left;
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
 }
 
 .home-paragraph {
@@ -178,7 +202,7 @@ h1, h2, h3, h4, .index-author {
 }
 
 .jumbotron {
-    background: #000 url("NQL.jpeg") center top;
+    background: #000 url("lightgray.png") center top;
     position: relative;
     width: 100%;
     height: 100%;

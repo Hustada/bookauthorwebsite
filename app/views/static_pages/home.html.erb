@@ -44,13 +44,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Author</a>
+                        <%=link_to 'Author', author_path %>
+                    </li>
+                    <li id="news">
+                        <%=link_to 'News and Updates', posts_path %>
                     </li>
                     <li>
-                        <a href="#">News and Updates</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <%=link_to 'Contact', contact_path %>
                     </li>
                 </ul>
             </div>
