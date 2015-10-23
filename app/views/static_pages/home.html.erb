@@ -10,11 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/the-big-picture.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,13 +40,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <%=link_to 'Author', author_path %>
+                        <%=link_to 'Author', '#' %>
                     </li>
                     <li id="news">
-                        <%=link_to 'News and Updates', posts_path %>
+                        <%=link_to 'News and Updates', '#' %>
                     </li>
                     <li>
-                        <%=link_to 'Contact', contact_path %>
+                        <%=link_to 'Contact', '#' %>
+                    </li>
+                    <li>
+                        <%=link_to 'Home', root_path %>
                     </li>
                 </ul>
             </div>
@@ -87,12 +86,6 @@
             </div>
     </div>
     <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
 <div class="divider"></div>
