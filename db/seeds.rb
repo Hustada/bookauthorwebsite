@@ -29,3 +29,4 @@ end
   Post.create!(title:  title,
                body: body)
 end
+
