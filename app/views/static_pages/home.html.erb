@@ -1,9 +1,97 @@
 <!DOCTYPE html>
-<html class="full">
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
 <head>
-	<title></title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/the-big-picture.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
+
+<body id="home-body">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Not Quite Love</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Author</a>
+                    </li>
+                    <li>
+                        <a href="#">News and Updates</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- /.row -->
+        <div class="row">
+        <br>
+                <div class="col-md-4">
+                    <%= link_to image_tag('large_book_cover_2.jpg', class: "img-responsive pull-left", id: "book-cover"), "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20" %>
+                    </div>
+                    <div class="col-md-8">
+                  <div class="home-content">
+                    <h2>Dating can be exhausting!</h2>
+                      <p> 
+                      From being cheated on, to being called unattractive, from fighting off the temptation to go too far, to connecting on all levels with someone except romantically and worst of all, never escaping the dreaded "friend zone"! Join one man's quest to see if there really is "someone for everyone" and if so, will he ever find her?
+                      </p>
+                      <h3>On Sale Now!</h3>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="amazon-button"><%=link_to "Amazon", "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20" %> </button>
+                        <button type="button" class="btn btn-default" id="barnes-button"><%=link_to "Barnes and Noble", "http://www.barnesandnoble.com/w/books/1122814283?ean=9781329598744" %></button>
+                        <button type="button" class="btn btn-default" id="lulu-button"><%=link_to "Lulu", "http://www.lulu.com/shop/ryan-onstad/not-quite-love/paperback/product-22386631.html" %></button>
+                      </div>
+                  </div>
+                </div>
+            </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
+<div class="divider"></div>
+
 </html>

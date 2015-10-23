@@ -1,35 +1,98 @@
+/* For Dev purposes only */
+
+/*.container {
+  border: 1px solid black;
+}
+*/
+/*.row {
+  border: 1px solid black;
+}*/
+
 /*
-.container {
-  border: 1px solid black;
-}
-
-.row {
+.col-md-2, .col-md-8 {
   border: 1px solid black;
 }
 */
 
-/*.col-md-2, .col-md-8 {
-  border: 1px solid black;
+/*.container {
+  border: 1px solid white;
+}*/
+
+/*.row {
+  border: 1px solid white;
 }
-*/
+
+.col-md-6 .col-sm-12 {
+  border: 1px solid white;
+}*/
+
+/* buy buttons */
+
+#barnes-button {
+  background-color: #4b8b57;
+}
+
+#barnes-button a {
+  color: white !important;
+}
+
+#amazon-button {
+  background-color: #f0c14b;
+}
+
+#amazon-button a {
+  color: #111 !important;
+}
+
+#lulu-button {
+  background-color: #5f7495;
+}
+
+#lulu-button a {
+  color: #ffd56d !important;
+}
+
+#book-cover {
+  float: left;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.home-content {
+  color: white;
+  display: block;
+}
 
 
 
-/*universal*/
-
-body {
+#home-body {
   margin-top: 50px;
   margin-bottom: 50px;
   background: none;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .full {
-  background: url(images/lightgray.png) no-repeat center center fixed; 
+  background: url(housewoods2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
+
+/*universal*/
+
+
+ img {
+
+ display: inline-block;
+
+ height: auto;
+
+ max-width: 100%;
+
+ }
 
 a {
   color: #444 !important;
@@ -62,25 +125,13 @@ p {
   text-align: left;
 }
 
-/*.container {
-  border: 1px solid white;
-}*/
-
-/*.row {
-  border: 1px solid white;
-}
-
-.col {
-  border: 1px solid white;
-}*/
-
 #title-jumbo {
 	background-color: white;
 }
 
 h1, h2, h3, h4, .index-author {
   font-family: 'Rochester', cursive !important;
-  color: #444;
+  color: #E4B8E3 !important;
 }
 
 .jumbotron {
