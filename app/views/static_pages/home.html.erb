@@ -62,23 +62,26 @@
     <!-- Page Content -->
     <div class="container">
         <!-- /.row -->
-        <div class="row">
         <br>
-                <div class="col-md-4">
-                    <%= link_to image_tag('large_book_cover_2.jpg', class: "img-responsive pull-left", id: "book-cover"), "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20" %>
+        <div class="row">
+                <div class="col-sm-4">
+                    <%= link_to image_tag('large_book_cover_2.jpg', class: "img-responsive", id: "book-cover"), "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20" %>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-sm-8">
                   <div class="home-content">
-                    <h2>Dating can be exhausting!</h2>
-                      <p> 
+                    <h2 class="home-title">Dating can be exhausting!</h2>
+                      <p class="home-paragraph"> 
                       From being cheated on, to being called unattractive, from fighting off the temptation to go too far, to connecting on all levels with someone except romantically and worst of all, never escaping the dreaded "friend zone"! Join one man's quest to see if there really is "someone for everyone" and if so, will he ever find her?
                       </p>
-                      <h3>On Sale Now!</h3>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-default" id="amazon-button"><%=link_to "Amazon", "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20" %> </button>
-                        <button type="button" class="btn btn-default" id="barnes-button"><%=link_to "Barnes and Noble", "http://www.barnesandnoble.com/w/books/1122814283?ean=9781329598744" %></button>
-                        <button type="button" class="btn btn-default" id="lulu-button"><%=link_to "Lulu", "http://www.lulu.com/shop/ryan-onstad/not-quite-love/paperback/product-22386631.html" %></button>
-                      </div>
+                      <h3 class="sale-title">On Sale Now!</h3>
+                      <center><h2 class="sale-title-mobile">Available Below</h2></center>
+                      <div class="button-wrapper">
+                          <div class="btn-group" id="buy-buttons">
+                            <button type="button" class="btn btn-default" id="amazon-button"><%=link_to "Amazon", "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20" %> </button>
+                            <button type="button" class="btn btn-default" id="barnes-button"><%=link_to "Barnes and Noble", "http://www.barnesandnoble.com/w/books/1122814283?ean=9781329598744" %></button>
+                            <button type="button" class="btn btn-default" id="lulu-button"><%=link_to "Lulu", "http://www.lulu.com/shop/ryan-onstad/not-quite-love/paperback/product-22386631.html" %></button>
+                          </div>
+                        </div>
                   </div>
                 </div>
             </div>

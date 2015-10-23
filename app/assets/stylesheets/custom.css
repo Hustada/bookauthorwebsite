@@ -22,7 +22,7 @@
   border: 1px solid white;
 }
 
-.col-md-6 .col-sm-12 {
+.col-sm-8 .col-sm-4 .col-md-8 .col-md-4 {
   border: 1px solid white;
 }*/
 
@@ -53,7 +53,6 @@
 }
 
 #book-cover {
-  float: left;
   margin-right: 20px;
   display: inline-block;
 }
@@ -98,6 +97,13 @@ a {
   color: #444 !important;
 }
 
+
+.home-title {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+}
+
 /*media queries */
 
 
@@ -119,10 +125,47 @@ a {
  }
 }
 
+@media (max-width: 525px) {
+  #book-cover {
+     display: block;
+     margin-right: auto; 
+     margin-left:auto;
+ }
+}
+
+@media (max-width: 525px) {
+  .button-wrapper {
+    text-align: center;
+    padding-top: 10px;
+ }
+}
+
+@media (max-width: 525px) {
+  .sale-title {
+     display: none;
+ }
+}
+
+@media (min-width: 525px) {
+  .sale-title-mobile {
+     display: none;
+ }
+}
+
+@media (max-width: 991px) {
+  .home-title {
+     font-size: 30px;
+ }
+}
 
 
 p {
   text-align: left;
+}
+
+.home-paragraph {
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-size: 14px;
 }
 
 #title-jumbo {
@@ -131,7 +174,7 @@ p {
 
 h1, h2, h3, h4, .index-author {
   font-family: 'Rochester', cursive !important;
-  color: #E4B8E3 !important;
+  font-weight: bold;
 }
 
 .jumbotron {
