@@ -32,9 +32,13 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+group :development do
+gem 'sqlite3'
+end
 
 group :production do
   gem 'unicorn'
   gem 'pg'
   gem 'rails_12factor'
 end
+
