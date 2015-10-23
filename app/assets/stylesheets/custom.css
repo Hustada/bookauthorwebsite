@@ -18,8 +18,17 @@
 /*universal*/
 
 body {
-  background-color: #f8f8f8 !important;
-  color: #6767667;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+
+.full {
+  background: url(images/lightgray.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a {

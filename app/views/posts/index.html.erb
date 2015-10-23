@@ -1,6 +1,8 @@
+<div class="jumbotron">
+  
+</div>
 <div class="container">
   <div class="row">
-
     <div class="col-md-3" id="index-sidebar">
       <ul class="nav nav-pills nav-stacked" data-spy="affix" id="sidebar-nav">
         <li role="presentation"><%=link_to 'Author', author_path %></li>
@@ -9,20 +11,15 @@
         <li role="presentation"><%=link_to 'Something Else', '#' %></li>
       </ul>
     </div>
-
-
-
-
-
-
-
-
-
+  
 
     <div class="col-md-9">
+    <div class="page-header">
+  <h1>News and Updates</h1>
+</div>
       <% @posts.each_with_index do |post, index| %>
     <h2 class="title"><%= link_to post.title, post %></h2>
-      <p><%= simple_format(index.zero? ?  post.body : truncate(post.body, length: 300)) %></p>
+      <p><%= simple_format(index.zero? ?  post.body_html : truncate(post.body, length: 300)) %></p>
       <p>Comments (<%=link_to "#{post.comments.count}", post_path(post) %>)<p>
       <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
     <% end %>
