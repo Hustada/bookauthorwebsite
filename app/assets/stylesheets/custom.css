@@ -69,9 +69,10 @@ li#news a {
 
 
 
-#home-body {
+.home-body {
   margin-top: 50px;
   margin-bottom: 50px;
+  padding-bottom: 20px;
   background: none;
   background-color: rgba(0,0,0,0.5);
 }
@@ -127,70 +128,7 @@ a {
   font-weight: 600;
 }
 
-/*media queries */
 
-
-@media (max-width: 646px) {
-  .jumbotron {
-    display: none;
-  }
-}
-
-@media (max-width: 991px) {
-  #sidebar-nav {
-    display: none;
-  }
-}
-
-@media (max-width: 991px) {
-  #newsletter_well {
-    display: none;
- }
-}
-
-@media (max-width: 525px) {
-  #book-cover {
-     display: block;
-     margin-right: auto; 
-     margin-left:auto;
- }
-}
-
-@media (max-width: 525px) {
-  .button-wrapper {
-    text-align: center;
-    padding-top: 10px;
- }
-}
-
-@media (max-width: 525px) {
-  .sale-title {
-     display: none;
- }
-}
-
-@media (min-width: 525px) {
-  .sale-title-mobile {
-     display: none;
- }
-}
-
-@media (max-width: 991px) {
-  .home-title {
-     font-size: 30px;
- }
-}
-
-/*iphone 6 */
-
-
-@media (max-width: 400px) {
-  .button-wrapper {
-     margin-bottom: 20px;
- }
-}
-
-/* iphone 6 end */
 
 
 
@@ -294,3 +232,68 @@ button.btn.btn-default {
   background-color: white;
   color: #999;
 }
+
+/*media queries */
+
+
+@media (max-width: 646px) {
+  .jumbotron {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #sidebar-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #newsletter_well {
+    display: none;
+ }
+}
+
+@media (max-width: 525px) {
+  #book-cover {
+     display: block;
+     margin-right: auto; 
+     margin-left:auto;
+ }
+}
+
+@media (max-width: 525px) {
+  .button-wrapper {
+    text-align: center;
+    padding-top: 10px;
+ }
+}
+
+@media (max-width: 525px) {
+  .sale-title {
+     display: none;
+ }
+}
+
+@media (min-width: 525px) {
+  .sale-title-mobile {
+     display: none;
+ }
+}
+
+@media (max-width: 991px) {
+  .home-title {
+     font-size: 30px;
+ }
+}
+
+/*iphone 6 */
+
+
+@media (max-width: 400px) {
+  .button-wrapper {
+     margin-bottom: 20px;
+ }
+}
+
+/* iphone 6 end */
