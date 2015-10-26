@@ -294,6 +294,10 @@ button.btn.btn-default {
   .button-wrapper {
      margin-bottom: 20px;
  }
+ .home-title {
+  margin-right: auto;
+  margin-left: auto;
+ }
 }
 
 /* iphone 6 end */
