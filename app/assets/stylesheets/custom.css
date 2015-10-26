@@ -181,6 +181,18 @@ a {
  }
 }
 
+/*iphone 6 */
+
+
+@media (max-width: 400px) {
+  .button-wrapper {
+     margin-bottom: 20px;
+ }
+}
+
+/* iphone 6 end */
+
+
 
 p {
   text-align: left;
