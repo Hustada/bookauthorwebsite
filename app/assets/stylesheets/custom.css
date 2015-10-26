@@ -76,7 +76,7 @@ li#news a {
   background-color: rgba(0,0,0,0.5);
 }
 
-.full {
+#full {
   background: url(housewoods2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
