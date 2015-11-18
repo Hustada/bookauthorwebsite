@@ -128,7 +128,9 @@ a {
   font-weight: 600;
 }
 
-
+#main-footer {
+  border: 1px solid #444;
+}
 
 
 
