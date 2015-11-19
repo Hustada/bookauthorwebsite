@@ -26,9 +26,16 @@
   border: 1px solid white;
 }*/
 
+
+.col-md-10 {
+  border-left: 1px solid #999;
+}
+
+
+
 /* deactivated links and stuff */
 li#news a {
-  display: none;
+
 }
 
 /* buy buttons */
@@ -67,7 +74,9 @@ li#news a {
   display: block;
 }
 
-
+.page-header {
+  border-bottom: 1px solid #999 !important;
+}
 
 .home-body {
   margin-top: 50px;
@@ -87,12 +96,15 @@ li#news a {
 }
 
 .author-page {
-  background: url(lightgray.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #304352; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #304352 , #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #304352 , #d7d2cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.posts-page {
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DCDCDC, white); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DCDCDC , white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .contact-page {
@@ -106,21 +118,43 @@ li#news a {
 
 /*universal*/
 
+p a {
+ background: -webkit-linear-gradient(#ff0084,#33001b);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+.sexy_line {
+  margin: 25px 0;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
+
+a.navbar-brand {
+background: -webkit-linear-gradient(#ff0084,#33001b);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+font-size: 25px;
+}
+
 
  img {
-
  display: inline-block;
-
  height: auto;
-
  max-width: 100%;
-
  }
 
 a {
   color: #444 !important;
 }
 
+h2#post-title.title a {
+  background: -webkit-linear-gradient(#ff0084,#444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .home-title {
   color: #fff;
@@ -129,7 +163,14 @@ a {
 }
 
 #main-footer {
-  border: 1px solid #444;
+  border: 1px solid #999;
+  padding-bottom: 50px;
+}
+
+#main-header {
+  border-bottom: 1px solid #999;
+  font-family: 'Rochester', cursive !important;
+  font-size: 20px;
 }
 
 
@@ -148,13 +189,13 @@ p {
 	background-color: white;
 }
 
-h1, h2, h3, h4, .index-author {
+h1, h2, h3, .index-author {
   font-family: 'Rochester', cursive !important;
-  font-weight: bold;
+  font-weight: bold;      
 }
 
 .jumbotron {
-    background: #000 url("lightgray.png") center top;
+    background: #000 url("gardenparty-3.jpg") center top;
     position: relative;
     width: 100%;
     height: 100%;
@@ -165,12 +206,22 @@ h1, h2, h3, h4, .index-author {
 /* sidebar shit */
 
 
+#index-sidebar {
+  border-right: 3px solid #999;
+}
+
 #sidebar-nav {
 	padding-top: 50px;
 }
 
 ul#sidebar-author {
 	margin-top: 30px;
+}
+
+#sidebar-nav a {
+  font-family: 'Rochester', cursive !important;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 /*#newsletter_well {
@@ -212,13 +263,26 @@ color: white;
 
 /* footer shit */
 
+#navbar-home {
+  border-bottom: 1px solid #999;
+  font-family: 'Rochester', cursive !important;
+  font-size: 20px;
+}
+
+
+.footer h4 {
+  font-family: 'Rochester', cursive !important;
+  font-weight: bold;
+  color: #444;
+}
+
 .divider {
   height: 50px;
 }
 
 .footer {
   padding: 20px;
-  color: #999;
+  color: #999 !important;
   background-color: white;
 }
 
@@ -251,8 +315,13 @@ button.btn.btn-default {
 }
 
 @media (max-width: 991px) {
+  .footer-paragraph {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
   #newsletter_well {
-    display: none;
  }
 }
 
