@@ -7,12 +7,12 @@
         <li role="presentation"><%=link_to 'Author', author_path %></li>
         <li role="presentation"><%=link_to 'Book', book_path %></li>
         <li role="presentation"><%=link_to 'Contact', contact_path %></li>
+        <li role="presentation"><%=link_to 'Buy', home_path %></li>
       </ul>
     </div>
   
 
     <div class="col-md-10">
-    <div class="jumbotron"></div>
     <div class="page-header">
   <h1>News and Updates</h1>
 </div>
@@ -21,6 +21,11 @@
       <p><%= simple_format(index.zero? ?  post.body_html : truncate(post.body, length: 300)) %></p>
       <p>Comments (<%=link_to "#{post.comments.count}", post_path(post) %>)<p>
       <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+      <% if logged_in? %>
+      <p><%=link_to "make a comment", post_path(post) if index.zero?  %></p>
+      <% else %>
+      <p><%= link_to 'Log in to make a comment', login_path if index.zero? %></p>
+      <% end %>
       <div class="sexy_line"></div>
     <% end %>
 

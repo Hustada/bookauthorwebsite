@@ -96,9 +96,9 @@ li#news a {
 }
 
 .author-page {
-  background: #304352; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #304352 , #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #304352 , #d7d2cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DCDCDC, white); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DCDCDC , white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .posts-page {
@@ -108,12 +108,21 @@ li#news a {
 }
 
 .contact-page {
-  background: url(lightgray.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DCDCDC, white); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DCDCDC , white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.new-session {
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DCDCDC, white); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DCDCDC , white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.new-user {
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DCDCDC, white); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DCDCDC , white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /*universal*/
@@ -195,12 +204,11 @@ h1, h2, h3, .index-author {
 }
 
 .jumbotron {
-    background: #000 url("gardenparty-3.jpg") center top;
+    background: #000 url("NQL.jpeg") center top;
     position: relative;
-    width: 100%;
-    height: 100%;
+    height: 100px;
     background-size: cover;
-    background-position: 70% 31%;
+    background-position: 50% 5%;
 }
 
 /* sidebar shit */
@@ -220,7 +228,6 @@ ul#sidebar-author {
 
 #sidebar-nav a {
   font-family: 'Rochester', cursive !important;
-  font-weight: bold;
   font-size: 30px;
 }
 
