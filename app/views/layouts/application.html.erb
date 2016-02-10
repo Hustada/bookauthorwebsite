@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Not Quite Love</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/grid.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/new_home.css">
   <%= csrf_meta_tags %>
+  <title>Not Quite Love</title>
 </head>
 
 <% flash.each do |message_type, message| %>

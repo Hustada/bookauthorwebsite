@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'users/new'
 
   resources :posts
-  root 'static_pages#home'
+  root 'static_pages#new_home'
 
   get '/home' =>  'static_pages#home'
   get '/about' => 'static_pages#about'

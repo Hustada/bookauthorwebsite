@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     if @user.save
       @user.send_activation_email
       UserMailer.account_activation(@user).deliver
-      flash[:info] = "Please check your email to activate your account."
+      flash[:info] = "An email has been sent to activate your account. (Please check you spam folder)"
       redirect_to root_url
     else
       render 'new'

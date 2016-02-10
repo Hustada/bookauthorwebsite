@@ -19,16 +19,16 @@
     <%= will_paginate @posts %>
 
     <h2>Recent Comments</h2>
-    <% @comments.each do |comment| %>
+    <% @comments.each do |comment, post| %>
     <ul class="comment-posts">
-      <li><%=link_to comment.name, [comment.post] %> - <small>Posted <%= time_ago_in_words(comment.created_at) %> Ago</small></li>
+      <li><%=link_to "#{comment.post.title}", [comment.post],"#{comment.body}" %> - <small>Posted <%= time_ago_in_words(comment.created_at) %> Ago</small></li>
     </ul>
     <% end %>
     <% else %>
     <h2>Recent Comments</h2>
-    <% @comments.each do |comment| %>
+    <% @comments.each do |comment, post| %>
     <ul class="comment-posts">
-      <li><%=link_to comment.name, [comment.post] %> - <small>Posted <%= time_ago_in_words(comment.created_at) %> Ago</small></li>
+      <li><%=link_to "#{comment.post.title}", [comment.post] %> (<%= comment.body %>) - <small>Posted <%= time_ago_in_words(comment.created_at) %> Ago</small></li>
     </ul>
     <% end %>
     <% end %>
@@ -38,7 +38,7 @@
       <% if current_user.admin? %>
         <button class="button"><%= link_to 'New Post', new_post_path %></button>
         <% end %>
-        <button class="button">Log Out</button>
+        <button class="button"><%=link_to 'Log Out', logout_path, method: 'delete' %></button>
         <% end %>
       </div>
     </div>

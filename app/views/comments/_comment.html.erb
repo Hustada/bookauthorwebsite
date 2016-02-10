@@ -1,14 +1,16 @@
 
 <div class="comment clearfix">
   <div class="comment-content">
-  	<p class="comment-name"><strong><%= comment.name %></strong></p>
   	<p class="comment-name"><%= comment.body %></p>
+    <p class="comment-name">Posted by: <%= comment.user.name %></p>
   	<p class="comment-name"><%= time_ago_in_words(comment.created_at) %> Ago</p>
   </div>
+
 
   <p><%= link_to 'Delete', [comment.post, comment],
                   method: :delete,
                   class:  "button",
-                  data: {confirm: 'Are you sure?'} %>
+                  data: {confirm: 'Are you sure?'} if comment.user == current_user  %>
   </p>
  </div>
+ <div class="boring_line"></div>
