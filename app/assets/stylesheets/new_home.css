@@ -28,7 +28,7 @@ footer {overflow:hidden;}
 
 html {
 	color: #555;
-	font-family: 'Lato', 'Arial', sans-serif;
+	font-family: 'Lato', 'Arial', sans-serif !important;
 	font-size: 20px;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
