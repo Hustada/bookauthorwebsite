@@ -12,7 +12,7 @@
 
 /*.col,
   .row {
-	border: 2px solid black;
+	border: 2px solid  #000000;
 }*/
 
 h1,
@@ -110,8 +110,8 @@ h2:after {
 /* Header shit */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(rose.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(rose.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), image-url('rose.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), image-url('rose.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -271,21 +271,21 @@ margin: 10px;
 
 #btn-amazon {
 	background-color: #f0c14b;
-	color: black;
+	color:  #000000;
 	border: 1px solid #f0c14b;
 }
 
 #btn-amazon:link,
 #btn-amazon:visited {
-    border: 1px solid #black;
-    color: black;
+    border: 1px solid black;
+    color:  #000000;
 }
 
 #btn-amazon:hover,
 #btn-amazon:active {
     border: 1px solid #ecb11c;
     background-color: #ecb11c;
-    color: black;
+    color:  #000000;
 }
 
 #btn-lulu {
@@ -405,8 +405,8 @@ margin: 10px;
 
 
 .section-testimonials {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(love.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(love.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), image-url('love.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), image-url('love.jpg');
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
