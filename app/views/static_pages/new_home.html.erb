@@ -14,10 +14,12 @@
                         <li><a href="#news" class="js--scroll-to-fan-pics">News and updates</a></li>
                         <li><a href="#news" class="js--scroll-to-book">Book</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
+
             </nav>
             <div class="hero-text-box">
-                <h1 id="title">Not Quite Love <br>A tale of love and tragedy</h1>
+                <h1 id="title">Not Quite Love</h1>
                 <br>
                 <a class="btn btn-full js--scroll-to-order" href="#">Buy the Book</a>
             </div>
@@ -40,27 +42,32 @@
                </div> 
         </section>
 
-        <section class="section-fan-pics js--fan-pics" id="fans">
-            <div class="row">
+        <section class="section-fans js--fan-pics" id="fans">
+        <div class="row">
                 <h2>Send in your pics!</h2>
             </div>
-            <div class="row js--wp-3">
-                <div class="col span-1-of-4 box">
-                    <%= image_tag("fan1.jpg", :alt => "fan 1" ) %>
-                </div>
-                <div class="col span-1-of-4 box">                
-                    <%= image_tag("cuteblonde.jpg", :alt => "fan 2" ) %>
-                </div>
-                <div class="col span-1-of-4 box">     
-                    <%= image_tag("fan3.jpg", :alt => "fan 3" ) %>
-                </div>
-                <div class="col span-1-of-4 box">    
-                    <%= image_tag("fan4.jpg", :alt => "fan 4" ) %>
-                </div>
-                <div class="row fan-paragraph">
+            <div class="row fan-paragraph">
                     <center><h3>Send in your pics, I want to see my fans with my book!</h3></center>
                 </div>
-            </div> 
+                <br>
+                <br>
+                <div class="row">
+            <ul class="fans-showcase clearfix">
+                <li>
+                    <figure class="fan-photo"><%= image_tag("fan1.jpg", :alt => "fan 1" ) %></figure>
+                </li>          
+                    <li><figure class="fan-photo"><%= image_tag("cuteblonde.jpg", :alt => "fan 2" ) %></figure>
+                </li>
+                  <li>
+                    <figure class="fan-photo"><%= image_tag("fan3.jpg", :alt => "fan 3" ) %></figure>
+                </li>
+                <li>
+                    <figure class="fan-photo"><%= image_tag("fan4.jpg", :alt => "fan 4" ) %></figure>
+                </li>
+            </ul>
+            </div>
+                
+            
         </section>
         
         <section class="section-testimonials">
@@ -102,13 +109,17 @@
                 <div class="col span-1-of-2 order-box">
                     <p>From being cheated on, to being called unattractive, from fighting off the temptation to go too far, to connecting on all levels with someone except romantically and worst of all, never escaping the dreaded "friend zone"! Join one man's quest to see if there really is "someone for everyone" and if so, will he ever find her?</p>
                     <br>
-                    <ul class="order-list">
+                    
+
+                    <div class="button-box">                   
+                    <%=link_to "Amazon", "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20", class: "btn-order", id: "btn-amazon" %>
+                   <br>
+                    <%=link_to "Lulu", "http://www.lulu.com/shop/ryan-onstad/not-quite-love/paperback/product-22386631.html", class: "btn-order", id: "btn-lulu" %>
+                    <br>
+                    <%=link_to "Barnes & Noble", "http://www.barnesandnoble.com/w/books/1122814283?ean=9781329598744", class: "btn-order", id: "btn-barnes" %>
+                    </div>
 
                     
-                    <li><%=link_to "Amazon", "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20", class: "btn-order", id: "btn-amazon" %></li>
-                    <li><%=link_to "Lulu", "http://www.lulu.com/shop/ryan-onstad/not-quite-love/paperback/product-22386631.html", class: "btn-order", id: "btn-lulu" %></li>
-                    <li><%=link_to "Barnes & Noble", "http://www.barnesandnoble.com/w/books/1122814283?ean=9781329598744", class: "btn-order", id: "btn-barnes" %></li>
-                    </ul>
                 </div>
 
 
