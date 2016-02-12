@@ -110,8 +110,7 @@ h2:after {
 /* Header shit */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), image-url('rose.jpg');
-    background-size: cover;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), image-url('rose.jpg');
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
@@ -404,7 +403,7 @@ margin: 10px;
 
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), image-url('love.jpg');
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), image-url('love.jpg');
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
