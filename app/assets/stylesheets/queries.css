@@ -129,6 +129,10 @@
         margin: 60px 0;
     }
 
+    header {
+        background-attachment: initial;
+    }
+
 
 }
 
@@ -141,6 +145,10 @@
 
     .sticky {
         height: initial;
+    }
+
+    header {
+        background-attachment: initial;  
     }
 
 
