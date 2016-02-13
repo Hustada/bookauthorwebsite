@@ -127,6 +127,14 @@
         margin: 0 auto;
     }
 
+    #buy-box {
+        margin-top: 3px;
+    }
+
+    .btn-full {
+        padding: 5px 20px
+    }
+
     .order-screen {
         width: 50%;
         display: block;
