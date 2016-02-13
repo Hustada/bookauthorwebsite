@@ -245,7 +245,6 @@ input[type=submit] {
 	text-decoration: none;
 	padding: 10px 30px;
 	border-radius: 10px;
-	width: 50%;
 	display: block;
 	text-align: center;
 }
@@ -320,6 +319,11 @@ margin: 10px;
 #btn-barnes:visited {
     border: 1px solid #396a42;
     color: #fff;
+}
+
+img.itunes {
+    width: 65%;
+    margin-left: 31px;
 }
 
 
@@ -477,6 +481,10 @@ cite {
 
 .buy-cart {
 	margin-bottom: 5px;
+}
+
+#buy-box {
+    margin-top: 2%;
 }
 
 

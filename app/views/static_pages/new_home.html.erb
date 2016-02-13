@@ -110,13 +110,34 @@
                     <p class="order-paragraph">From being cheated on, to being called unattractive, from fighting off the temptation to go too far, to connecting on all levels with someone except romantically and worst of all, never escaping the dreaded "friend zone"! Join one man's quest to see if there really is "someone for everyone" and if so, will he ever find her?</p>
                     <br>
                     
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <div class="button-box">
+                                <div class="ion-arrow-right-a"></div>                   
+                                <%=link_to "Amazon", "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20", class: "btn-order", id: "btn-amazon" %>
+                               <br>
+                               <div class="ion-arrow-right-a"></div> 
+                                <%=link_to "Lulu", "http://www.lulu.com/shop/ryan-onstad/not-quite-love/paperback/product-22386631.html", class: "btn-order", id: "btn-lulu" %>
+                                <br>
+                                <div class="ion-arrow-right-a"></div> 
+                                <%=link_to "Barnes & Noble", "http://www.barnesandnoble.com/w/books/1122814283?ean=9781329598744", class: "btn-order", id: "btn-barnes" %>
+                                <br>
+                            </div>
+                    </div>
 
-                    <div class="button-box">                   
-                    <%=link_to "Amazon", "http://www.amazon.com/gp/product/1329598741?ie=UTF8&camp=1789&creativeASIN=1329598741&linkCode=xm2&tag=wwwabsanddiet-20", class: "btn-order", id: "btn-amazon" %>
-                   <br>
-                    <%=link_to "Lulu", "http://www.lulu.com/shop/ryan-onstad/not-quite-love/paperback/product-22386631.html", class: "btn-order", id: "btn-lulu" %>
-                    <br>
-                    <%=link_to "Barnes & Noble", "http://www.barnesandnoble.com/w/books/1122814283?ean=9781329598744", class: "btn-order", id: "btn-barnes" %>
+                    <div class="col span-1-of-2 itunes">
+                        <%= link_to href: 'https://itunes.apple.com/us/book/not-quite-love/id1055456842?mt=11' do %>
+                            <%= image_tag 'Get_it_on_iBooks_Badge.svg', class: "itunes" %>
+                        <% end %>
+                    </div>
+                             
+    
+
+                   
+
+
+
+                    
                     </div>
 
                     
