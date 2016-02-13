@@ -131,7 +131,8 @@
         margin-top: 3px;
     }
 
-    .btn-full {
+    .btn-full,
+    .btn-order {
         padding: 5px 20px
     }
 
