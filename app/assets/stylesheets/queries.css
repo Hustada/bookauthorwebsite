@@ -33,6 +33,11 @@
     .button-box {
         font-size: 80%
     }
+    
+    /* iphone and ipad browsers don't allow fixed */
+    header {
+        background-attachment: initial;
+    }
 }
 
 
@@ -129,6 +134,7 @@
         margin: 60px 0;
     }
 
+    /* iphone and ipad browsers don't allow fixed */
     header {
         background-attachment: initial;
     }
@@ -147,6 +153,7 @@
         height: initial;
     }
 
+    /* iphone and ipad browsers don't allow fixed */
     header {
         background-attachment: initial;  
     }
