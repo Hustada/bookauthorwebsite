@@ -9,9 +9,12 @@
 }
 
 @media only screen and (max-width: 1199px) {
-header {
-    background-attachment: initial;
-}
+    
+    /* iphone and ipad browsers don't allow fixed */
+    header,
+    .section-testimoinals {
+        background-attachment: initial;
+    }
 }
 
 
@@ -41,7 +44,8 @@ header {
     }
     
     /* iphone and ipad browsers don't allow fixed */
-    header {
+    header,
+    .section-testimoinals {
         background-attachment: initial;
     }
 }
@@ -141,7 +145,8 @@ header {
     }
 
     /* iphone and ipad browsers don't allow fixed */
-    header {
+    header,
+    .section-testimoinals {
         background-attachment: initial;
     }
 
@@ -160,7 +165,8 @@ header {
     }
 
     /* iphone and ipad browsers don't allow fixed */
-    header {
+    header,
+    .section-testimoinals {
         background-attachment: initial;  
     }
 
