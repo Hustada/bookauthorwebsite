@@ -28,7 +28,10 @@
         margin-left: 10%;
     }
     
-    .order-screen { width: 70%; }
+    .order-screen { 
+        width: 76%;
+        height: 85%; 
+    }
     
     .icon-small { 
         width: 17px;
@@ -44,7 +47,7 @@
     }
 
     #buy-box {
-        margin-top: -55px;
+        margin-top: -50px;
     }
     
     /* iphone and ipad browsers don't allow fixed */
