@@ -9,7 +9,7 @@
 }
 
 @media only screen and (max-width: 1199px) {
-    
+
     /* iphone and ipad browsers don't allow fixed */
     header,
     .section-testimoinals {
@@ -117,15 +117,21 @@
     }
 
     .order-screen {
-        width: 40%;
+        width: 50%;
         display: block;
         position: relative;
         margin: 0 auto;
+        margin-bottom: -40px;
+        margin-top: -20px;
     }
 
     .order-box {
        text-align: center;
        margin: 0 auto;
+    }
+
+    #buy-box {
+        padding-bottom: -50px;
     }
 
     .author-box {
