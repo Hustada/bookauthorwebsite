@@ -42,11 +42,19 @@
     .button-box {
         font-size: 80%
     }
+
+    #buy-box {
+        margin-top: -55px;
+    }
     
     /* iphone and ipad browsers don't allow fixed */
     header,
     .section-testimoinals {
         background-attachment: initial;
+    }
+
+    .order-paragraph {
+        margin-top: 55px;
     }
 }
 
