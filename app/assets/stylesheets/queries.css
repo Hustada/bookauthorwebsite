@@ -194,7 +194,7 @@
         margin-top: -7%;
     }
 
-    img.itunes {
+    a img {
     width: 34%;
     margin-left: 33%;
     }
@@ -224,6 +224,8 @@
     .section-testimoinals {
         background-attachment: initial;  
     }
+
+    
         
 
 }
