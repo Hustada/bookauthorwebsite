@@ -11,11 +11,14 @@
 }
         
 
-/*  .col,
-  .row {
+ /* .col {
 	border: 2px solid  #000000;
-}*/
+}
 
+ .row {
+    border: 2px solid  #000000;
+}
+*/
 h1,
 h2,
 h3 {
@@ -327,6 +330,13 @@ a img {
     margin-left: 31px;
 }
 
+.coming-soon {
+    font-size: 90%;
+}
+
+.coming-soon-box {
+    text-align: center;
+}
 
 /* ICONS */
 
