@@ -58,7 +58,7 @@ $(document).ready(function() {
     $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass('animated fadeIn');
     }, {
-        offset: '95%'
+        offset: '105%'
     });
     
     $('.js--wp-2').waypoint(function(direction) {
