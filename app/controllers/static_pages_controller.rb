@@ -15,4 +15,8 @@ end
 def home
 end
 
+def new_home
+	@subscription = Subscription.new
+end
+
 end

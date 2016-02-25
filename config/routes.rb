@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   resources :posts
   root 'static_pages#new_home'
 
+  resources :subscriptions, only: [:new, :create, :edit, :update]
+
   get '/home' =>  'static_pages#home'
   get '/about' => 'static_pages#about'
   get '/author' => 'static_pages#author'
