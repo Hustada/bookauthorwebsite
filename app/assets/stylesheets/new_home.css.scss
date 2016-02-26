@@ -14,13 +14,13 @@
 
 /*  .col {
 	border: 2px solid  #000000;
+}
+
+
+ .row {
+    border: 2px solid  #000000;
 }*/
 
-
-/* .row {
-    border: 2px solid  #000000;
-}
-*/
 
 h1,
 h2,
@@ -697,4 +697,28 @@ footer p {
     margin-right: 40px;
 }
 
+.label-email {
+    margin-right: 12px;
+}
+
+.name-label {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.subscription-list {
+    list-style: none;
+    margin: 0 auto;
+    widows: 20%;
+}
+
+#subscription_name {
+    width: 200px;
+    margin-right: 30px;
+}
+
+#subscription_email {
+    width: 200px;
+}
 

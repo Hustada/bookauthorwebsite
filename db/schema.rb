@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150923025149) do
+ActiveRecord::Schema.define(version: 20160226004552) do
 
   create_table "comments", force: true do |t|
     t.string   "name"
@@ -34,6 +34,14 @@ ActiveRecord::Schema.define(version: 20150923025149) do
   end
 
   add_index "posts", ["post_id"], name: "index_posts_on_post_id"
+
+  create_table "subscriptions", force: true do |t|
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "subscribed", default: true
+    t.string   "name"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"

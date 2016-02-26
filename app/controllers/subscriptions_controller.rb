@@ -12,6 +12,7 @@ class SubscriptionsController < ApplicationController
 	end
 
 	def show
+		@subscriptions = Subscription.all.order('created_at DESC').paginate(page: params[:page],per_page: 15)
 	end
 
 	def edit
@@ -26,7 +27,7 @@ class SubscriptionsController < ApplicationController
 	private
 
 	def subscription_params
-	  params.require(:subscription).permit(:email)
+	  params.require(:subscription).permit(:email, :name)
 	end
 
 end

@@ -1,0 +1,14 @@
+<h2>Mailing List Subscribers</h2>
+
+<div class="row">
+	<center>
+		<ul class="subscription-list">
+		<% @subscriptions.each do |subscription| %>
+			<li><%= subscription.name %> - <%= subscription.email %></li>
+			<br>
+			<% end %>
+		</ul>
+	</center>
+
+</div>
+
