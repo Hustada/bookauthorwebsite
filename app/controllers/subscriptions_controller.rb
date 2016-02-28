@@ -6,7 +6,10 @@ class SubscriptionsController < ApplicationController
 	def create
 		@subscription = Subscription.create(subscription_params)
    		if @subscription.save
-  			@subscription.save
+  			@subscription.send_subscription_email
+  			SubscriptionMailer.subscription_activation(@subscription).deliver
+   		redirect_to root_path
+   	else
    		redirect_to root_path
   		end
 	end

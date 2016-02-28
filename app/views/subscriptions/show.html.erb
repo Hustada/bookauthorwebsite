@@ -1,3 +1,4 @@
+<div class="section-list-subscribers">
 <h2>Mailing List Subscribers</h2>
 
 <div class="row">
@@ -6,9 +7,12 @@
 		<% @subscriptions.each do |subscription| %>
 			<li><%= subscription.name %> - <%= subscription.email %></li>
 			<br>
+
 			<% end %>
+			<%= will_paginate %>
 		</ul>
 	</center>
 
+</div>
 </div>
 

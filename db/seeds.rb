@@ -32,7 +32,7 @@ end
 
 99.times do |n|
   name  = Faker::Name.name
-  email = "example-#{n+1}@railstutorial.org"
+  email = "example-#{n+1}@gmail.com"
   Subscription.create!(name:  name,
                email: email)
 end
