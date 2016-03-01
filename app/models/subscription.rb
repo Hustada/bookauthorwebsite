@@ -3,6 +3,7 @@ class Subscription < ActiveRecord::Base
 	validates :email, presence: true, length: { maximum: 255 },
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
+  validates :name, presence: true, length: { maximum: 255 }                  
 
 	def send_subscription_email
 	    SubscriptionMailer.subscription_activation(self).deliver

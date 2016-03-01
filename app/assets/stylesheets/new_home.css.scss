@@ -726,3 +726,24 @@ footer p {
     margin: 40px;
 }
 
+
+.flash-message {
+  &.error {
+        background-color: transparent;
+        }
+  &.notice {
+        background-color: transparent;
+        }
+  font-family: 'Lato', 'Arial', sans-serif !important;      
+  color: white;
+  z-index: 999;
+  position: fixed;
+  font-weight: bold;
+  width: 96%;
+  margin: 20px;
+  padding: 5px;
+        p {
+                font-size: 110%;
+                margin: 15px 0;
+        }
+}

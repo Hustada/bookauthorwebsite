@@ -36,7 +36,11 @@ $(document).ready(function() {
 
     $('.js--scroll-to-contact').click(function () {
        $('html, body').animate({scrollTop: $('.js--section-contact').offset().top}, 1000); 
-    });   
+    });
+
+    $('.js--scroll-to-subscribe').click(function () {
+       $('html, body').animate({scrollTop: $('.js--section-subscribe').offset().top}, 1000); 
+    });
     
     /* Navigation scroll */
     $(function() {
@@ -95,4 +99,6 @@ $(document).ready(function() {
         }        
     });
 
+    $('.flash-message').fadeIn('fast').delay(3000).fadeOut('fast');
+    
 });

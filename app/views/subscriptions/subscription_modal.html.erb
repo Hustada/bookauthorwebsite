@@ -1,0 +1,31 @@
+<%= form_for @subscription do |f| %>
+<% if @subscription.errors.any? %>
+<div id="errors"
+          <h2><%= pluralize(@subscription.errors.count, "error") %> prevented this subscrition from being saved</h2>
+          <ul>
+            <% @subscription.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+              <% end %>
+              <% end %>
+              <center>
+<div class="row">
+                <h2>Subscribe</h2>
+            </div>
+            <div class="row newsletter">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row email-label">
+                        <%= f.label :email, :class => 'label-email' %>
+                        <%= f.email_field :email %>
+                        </div>
+                        <div class="row name-label">
+                        <%= f.label :name %>
+                        <%= f.text_field :name %>
+                        </div>
+                        <div class="row">
+                        <%= f.submit 'Subscribe', :class => 'btn-full-subscribe' %>
+                        </div>
+                </form>
+            </center
+
+  
+  <% end %>
