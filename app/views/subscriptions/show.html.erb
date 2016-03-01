@@ -3,6 +3,7 @@
 
 <div class="row">
 	<center>
+		<h3>Total Subscriptions: <%= @subscriptions.all.count %></h3><br>
 		<ul class="subscription-list">
 		<% @subscriptions.each do |subscription| %>
 			<li><%= subscription.name %> - <%= subscription.email %></li>
