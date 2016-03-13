@@ -24,6 +24,9 @@ class SubscriptionsController < ApplicationController
 	end
 
 	def destroy
+	 @subscription.destroy
+		flash[:notice] = "You have been unsubscribed"
+		redirect_to root_path
 	end
 
 	def update

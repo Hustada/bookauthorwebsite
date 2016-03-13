@@ -17,6 +17,8 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'font-awesome-rails'
 gem "auto_html"
 gem "font-ionicons-rails"
+gem 'pry'
+gem 'pry-byebug'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'

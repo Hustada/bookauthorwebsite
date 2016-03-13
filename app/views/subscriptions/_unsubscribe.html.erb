@@ -1,0 +1,21 @@
+<%= form_for @subscription, method: :delete do |f| %>
+
+	
+
+<div class="row">
+                <h2>Unsubscribe</h2>
+            </div>
+            <div class="row newsletter">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row email-label">
+                        <%= f.label :email, :class => 'label-email' %>
+                        <%= f.email_field :email %>
+                        </div>
+                        <div class="row">
+                        <%= f.submit 'Unsubscribe', :class => 'btn-full-subscribe' %>
+                        </div>
+                </form>
+            </center
+
+  
+  <% end %>

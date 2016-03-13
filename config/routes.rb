@@ -10,10 +10,18 @@ Rails.application.routes.draw do
   resources :posts
   root 'static_pages#new_home'
 
-  resources :subscriptions, only: [:new, :create, :edit, :update, :show]
+  resources :subscriptions, only: [:new, :create, :edit, :update, :show, :destroy]
+  resources :users
+  resources :account_activations, only: [:edit]
+  resources :password_resets, only: [:new, :create, :edit, :update]
+
+  resources :posts do
+    resources :comments
+  end
 
   get '/home' =>  'static_pages#home'
   get 'subscriptions' => 'subscriptions#show'
+  delete 'subscriptions' => 'subscriptions#destroy'
   get '/about' => 'static_pages#about'
   get '/author' => 'static_pages#author'
   get '/contact' => 'static_pages#contact'
@@ -22,12 +30,4 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
-
-  resources :users
-  resources :account_activations, only: [:edit]
-  resources :password_resets, only: [:new, :create, :edit, :update]
-
-  resources :posts do
-    resources :comments
-  end
 end
