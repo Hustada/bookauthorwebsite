@@ -10,7 +10,11 @@ Rails.application.routes.draw do
   resources :posts
   root 'static_pages#new_home'
 
-  resources :subscriptions, only: [:new, :create, :edit, :update, :show, :destroy]
+  resources :subscriptions do
+  member do
+    get :unsubscribe
+    end
+  end
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]
@@ -21,7 +25,6 @@ Rails.application.routes.draw do
 
   get '/home' =>  'static_pages#home'
   get 'subscriptions' => 'subscriptions#show'
-  delete 'subscriptions' => 'subscriptions#destroy'
   get '/about' => 'static_pages#about'
   get '/author' => 'static_pages#author'
   get '/contact' => 'static_pages#contact'
