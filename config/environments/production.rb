@@ -16,7 +16,7 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :sendmail
-  config.action_mailer.default_url_options = { host: => 'http://www.notquitelove.com' }
+  config.action_mailer.default_url_options = { host: 'http://www.notquitelove.com' }
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
