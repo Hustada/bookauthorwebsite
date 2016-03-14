@@ -24,6 +24,7 @@ class SubscriptionsController < ApplicationController
 	end
 
 	def unsubscribe
+		@subscription = Subscription.find(params[:id])
 	end
 
 	def destroy
