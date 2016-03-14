@@ -11,7 +11,7 @@ class SubscriptionsController < ApplicationController
   			flash[:notice] = "Thanks for subscribing!"
    		redirect_to root_path
    	else
-   		flash[:notice] = "There was a problem with some of the information you entered. Be sure to enter to enter a valid email."
+   		flash[:notice] = "Either you entered your email incorrectly or it already exists in our database."
    		redirect_to root_path
   		end
 	end

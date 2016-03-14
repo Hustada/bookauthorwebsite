@@ -99,6 +99,6 @@ $(document).ready(function() {
         }        
     });
 
-    $('.flash-message').fadeIn('fast').delay(3000).fadeOut('fast');
+    $('.flash-message').fadeIn('fast').delay(5000).fadeOut('fast');
     
 });
