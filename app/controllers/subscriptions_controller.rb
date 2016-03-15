@@ -17,6 +17,9 @@ class SubscriptionsController < ApplicationController
 	end
 
 	def show
+	end
+
+	def index
 		@subscriptions = Subscription.all.order('created_at DESC').paginate(page: params[:page],per_page: 15)
 	end
 

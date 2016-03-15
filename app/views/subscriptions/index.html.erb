@@ -1,6 +1,19 @@
+<div class="section-list-subscribers">
+<h2>Mailing List Subscribers</h2>
+
 <div class="row">
-<div class="section-unsubscribe">
-	<h2>Unsubscribe</h2>
- <%= render 'subscriptions/form' %>
+	<center>
+		<h3>Total Subscriptions: <%= @subscriptions.all.count %></h3><br>
+		<ul class="subscription-list">
+		<% @subscriptions.each do |subscription| %>
+			<li><%= subscription.name %> - <%= subscription.email %></li>
+			<br>
+
+			<% end %>
+			<%= will_paginate %>
+		</ul>
+	</center>
+
 </div>
 </div>
+
