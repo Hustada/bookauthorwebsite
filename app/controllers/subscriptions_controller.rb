@@ -1,4 +1,7 @@
 class SubscriptionsController < ApplicationController
+	include ApplicationHelper
+	before_filter :login_required, :only => [:index]
+
 	def new
 		@subscription = Subscription.new
 	end
