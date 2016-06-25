@@ -31,7 +31,6 @@ h3 {
 
 /* set universal shit like fonts and stuff */
 
-footer {overflow:hidden;}
 
 html {
 	color: #555;
@@ -428,6 +427,11 @@ a img {
     width: 25%;
 }
 
+.centerer {
+  text-align: center;
+  margin-top: 50px;
+}
+
 
 
 /* author */
@@ -535,7 +539,7 @@ cite {
 
 
 /* ----------------------------------------------- */
-/* CONTACT*/
+/* CONTACT */
 /* ----------------------------------------------- */
 
 .section-contact {
@@ -607,6 +611,8 @@ input[type=checkbox] {
 /* ----------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------- */
+
+footer {overflow:hidden;}
 
 footer {
     background-color: #333;
@@ -746,4 +752,12 @@ footer p {
                 font-size: 110%;
                 margin: 15px 0;
         }
+}
+
+/* ----------------------------------------------- */
+/* SUBSCRIBE */
+/* ----------------------------------------------- */
+
+.journal-link {
+  color: #c0392b;
 }
