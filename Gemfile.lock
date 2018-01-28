@@ -36,7 +36,6 @@ GEM
       json
     bcrypt (3.1.10)
     builder (3.2.2)
-    byebug (8.2.1)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -78,9 +77,6 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry-byebug (3.3.0)
-      byebug (~> 8.0)
-      pry (~> 0.10)
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -169,7 +165,6 @@ DEPENDENCIES
   jquery-rails
   pg
   pry
-  pry-byebug
   rails (= 4.1.4)
   rails_12factor
   sass-rails (~> 4.0.3)

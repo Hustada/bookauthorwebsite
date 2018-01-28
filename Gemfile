@@ -19,7 +19,6 @@ gem 'font-awesome-rails'
 gem "auto_html"
 gem "font-ionicons-rails"
 gem 'pry'
-gem 'pry-byebug'
 gem 'social-share-button'
 gem "figaro"
 
