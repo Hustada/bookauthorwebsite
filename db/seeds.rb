@@ -6,33 +6,33 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create!(name:  "Mark Hustad",
-             email: "hustada80@gmail.com",
-             password:              "frackers",
-             password_confirmation: "frackers",
-						 admin: true,
-						 activated: true)
+# User.create!(name:  "Mark Hustad",
+#              email: "hustada80@gmail.com",
+#              password:              "frackers",
+#              password_confirmation: "frackers",
+# 						 admin: true,
+# 						 activated: true)
 
-99.times do |n|
-  name  = Faker::Name.name
-  email = "example-#{n+1}@railstutorial.org"
-  password = "password"
-  User.create!(name:  name,
-               email: email,
-               password:              password,
-               password_confirmation: password)
-end
+# 99.times do |n|
+#   name  = Faker::Name.name
+#   email = "example-#{n+1}@railstutorial.org"
+#   password = "password"
+#   User.create!(name:  name,
+#                email: email,
+#                password:              password,
+#                password_confirmation: password)
+# end
 
-25.times do |n|
-  title  = Faker::Lorem.sentence(5)
-  body = Faker::Lorem.paragraph(100)
-  Post.create!(title:  title,
-               body: body)
-end
+# 25.times do |n|
+#   title  = Faker::Lorem.sentence(5)
+#   body = Faker::Lorem.paragraph(100)
+#   Post.create!(title:  title,
+#                body: body)
+# end
 
-99.times do |n|
-  name  = Faker::Name.name
-  email = "example-#{n+1}@gmail.com"
-  Subscription.create!(name:  name,
-               email: email)
-end
+# 99.times do |n|
+#   name  = Faker::Name.name
+#   email = "example-#{n+1}@gmail.com"
+#   Subscription.create!(name:  name,
+#                email: email)
+# end

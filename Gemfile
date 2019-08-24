@@ -16,11 +16,13 @@ gem 'spring',        group: :development
 gem 'autoprefixer-rails'
 gem 'will_paginate', '~> 3.0.6'
 gem 'font-awesome-rails'
-gem "auto_html"
 gem "font-ionicons-rails"
 gem 'pry'
 gem 'social-share-button'
 gem "figaro"
+gem 'unicorn'
+gem 'pg', '~> 0.15'
+gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -33,12 +35,10 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-group :development do
-  gem 'sqlite3', '~> 1.3.6'
-end
+# group :development do
+#   gem 'sqlite3', '~> 1.3.6'
+# end
 
-group :production do
-  gem 'unicorn'
-  gem 'pg', '~> 1.1.4'
-  gem 'rails_12factor'
-end
+# group :production do
+#
+# end
