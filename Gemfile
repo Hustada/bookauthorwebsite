@@ -21,7 +21,7 @@ gem "font-ionicons-rails"
 gem 'pry'
 gem 'social-share-button'
 gem "figaro"
-gem 'sqlite3', '~> 1.3.6'
+# gem 'sqlite3', '~> 1.3.6'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
