@@ -29,17 +29,17 @@
         <section class="section-author js--section-author">
             <div class="row">
                 <h2>The Author</h2>
-             </div> 
-             <div class="row">  
+             </div>
+             <div class="row">
              <div class="author-box">
                     <div class="col span-1-of-2">
-                        <p class="long-copy author-paragraph">Besides writing, Ryan also is a musician, avid concert goer and film fanatic. In his spare time, he volunteers in the community as well as at his church and has gone on several missions trips, including one to New Orleans where he built houses. He also loves Star Wars, Chipotle, Husker football and Mountain Dew. He is obviously single and currently resides in Lincoln, NE.</p>      
+                        <p class="long-copy author-paragraph">Besides writing, Ryan also is a musician, avid concert goer and film fanatic. In his spare time, he volunteers in the community as well as at his church and has gone on several missions trips, including one to New Orleans where he built houses. He also loves Star Wars, Chipotle, Husker football and Mountain Dew. He is obviously single and currently resides in Lincoln, NE.</p>
                     </div>
                     <div class="col span-1-of-2">
                          <%= image_tag("ryanauthor_2.jpg", :alt => "author", :id => "author-pic") %>
                     </div>
                     </div>
-               </div> 
+               </div>
         </section>
 
         <section class="section-fans js--fan-pics" id="fans">
@@ -55,7 +55,7 @@
                 <ul class="fans-showcase clearfix js--wp-1">
                     <li>
                         <figure class="fan-photo"><%= image_tag("fan1.jpg", :alt => "fan 1" ) %></figure>
-                    </li>          
+                    </li>
                         <li><figure class="fan-photo"><%= image_tag("fan5.jpg", :alt => "fan 2" ) %></figure>
                     </li>
                       <li>
@@ -71,7 +71,7 @@
                 <%=link_to "See more..", "http://journalstar.com/news/local/cindy-lange-kubick-not-quite-love-again-and-again-one/article_6936c75c-a555-569a-8a3a-282ddde14293.html", :class => "journal-link" %>
             </div>
         </section>
-        
+
         <section class="section-testimonials">
             <div class="row">
                 <h2>See what others have to say!</h2>
@@ -111,7 +111,7 @@
                     <div class="col span-1-of-2 order-box" id="buy-box">
                         <p class="order-paragraph">From being cheated on, to being called unattractive, from fighting off the temptation to go too far, to connecting on all levels with someone except romantically and worst of all, never escaping the dreaded "friend zone"! Join one man's quest to see if there really is "someone for everyone" and if so, will he ever find her?</p>
                         <br>
-                        
+
                         <div class="row">
                             <div class="col span-1-of-2">
                                 <div class="button-box js--wp-4">
@@ -131,7 +131,7 @@
                                 <br>
                                 <a href="#"><img src=<%= asset_path('audible.svg', class: "itunes")%> alt="Book Store Button"></a>
                                 <div class="coming-soon-box"><p class="coming-soon">(Not yet available)</p></div>
-                                
+
                         </div>
                     </div>
                  </div>
@@ -139,16 +139,16 @@
             <p class="retail-paragraph">Available in paperback, Kindle, Nook, and other ebook formats. Audible version coming soon!</p>
         </section>
 
-        <section class="section-form js--section-subscribe">
-        
-            <%= render 'subscriptions/form' %>
+        <!-- <section class="section-form js--section-subscribe">
+
+            <%# <%= render 'subscriptions/form' %> %>
             <p class="retail-paragraph">Subscribe to stay informed on all the happenings of the book, discounts, etc</p>
-        </section>
+        </section> -->
 
         <section class="section-contact js--section-contact">
             <div class="row">
                 <h2>Contact</h2>
-            </div>    
+            </div>
             <div class="row">
                 <div class="contact-box">
                     <a href="#email" class="email">notquitelovebook@gmail.com</a>
@@ -175,7 +175,6 @@
           ga('create', 'UA-55146955-2', 'auto');
           ga('send', 'pageview');
         </script>
-    </body>  
-    
-</html>
+    </body>
 
+</html>
