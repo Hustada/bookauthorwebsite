@@ -1,9 +1,9 @@
-ruby  '2.3.0'
+ruby  '2.5.5'
 source 'https://rubygems.org'
 
 
 
-gem 'rails', '4.1.4'
+gem 'rails', '4.2.8'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -21,6 +21,7 @@ gem "font-ionicons-rails"
 gem 'pry'
 gem 'social-share-button'
 gem "figaro"
+gem 'sqlite3', '~> 1.3.6'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -33,13 +34,12 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-group :development do
-gem 'sqlite3'
-end
+# group :development do
+#
+# end
 
 group :production do
   gem 'unicorn'
   gem 'pg'
   gem 'rails_12factor'
 end
-
