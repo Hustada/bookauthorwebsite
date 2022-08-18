@@ -1,4 +1,4 @@
-ruby  '2.7.0'
+ruby  '3.0.0'
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.8'
@@ -21,7 +21,7 @@ gem "figaro"
 gem 'unicorn'
 gem 'pg', '~> 0.15'
 gem 'rails_12factor'
-gem 'bigdecimal', '1.4.2'
+gem 'bigdecimal', '3.0.0'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
